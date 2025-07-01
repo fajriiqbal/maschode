@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - SMA Nusantara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <img src="https://via.placeholder.com/40x40" alt="Logo" class="h-10 w-10">
+                    <span class="ml-2 text-xl font-bold text-gray-800">SMA Nusantara</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-600 transition">Beranda</a>
+                    <a href="tentang.html" class="text-primary-600 font-semibold">Tentang</a>
+                    <a href="#program" class="text-gray-700 hover:text-primary-600 transition">Program</a>
+                    <a href="#berita" class="text-gray-700 hover:text-primary-600 transition">Berita</a>
+                    <a href="#kontak" class="text-gray-700 hover:text-primary-600 transition">Kontak</a>
+                    <button class="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition">
+                        Daftar Sekarang
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary-600">Beranda</a>
+                <a href="tentang.html" class="block px-3 py-2 text-primary-600 font-semibold">Tentang</a>
+                <a href="#program" class="block px-3 py-2 text-gray-700 hover:text-primary-600">Program</a>
+                <a href="#berita" class="block px-3 py-2 text-gray-700 hover:text-primary-600">Berita</a>
+                <a href="#kontak" class="block px-3 py-2 text-gray-700 hover:text-primary-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-to-br from-primary-50 to-blue-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+                    Tentang <span class="text-primary-600">SMA Nusantara</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Mengenal lebih dekat SMA Nusantara, sekolah unggulan yang telah berdedikasi 
+                    dalam mencerdaskan generasi bangsa selama lebih dari satu dekade.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                        Sejarah Kami
+                    </h2>
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            SMA Nusantara didirikan pada tahun 2008 dengan visi mulia untuk menciptakan 
+                            lembaga pendidikan yang tidak hanya mengutamakan pencapaian akademik, tetapi 
+                            juga pembentukan karakter yang kuat bagi para siswa.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Dimulai dengan 50 siswa dan 10 guru, kini kami telah berkembang menjadi 
+                            sekolah dengan lebih dari 500 siswa aktif dan 50 tenaga pengajar berpengalaman.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Perjalanan panjang ini telah membuktikan komitmen kami dalam memberikan 
+                            pendidikan berkualitas tinggi yang mempersiapkan siswa menghadapi tantangan 
+                            global di masa depan.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://via.placeholder.com/600x400" alt="Sejarah Sekolah" class="rounded-2xl shadow-xl">
+                    <div class="absolute -bottom-6 -left-6 bg-primary-600 text-white p-6 rounded-xl shadow-lg">
+                        <div class="text-2xl font-bold">15+</div>
+                        <div class="text-primary-100">Tahun Pengalaman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Mission Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Visi & Misi
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Landasan filosofi yang menuntun setiap langkah kami dalam memberikan pendidikan terbaik
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Visi -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="text-center mb-8">
+                        <div class="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-eye text-primary-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Visi</h3>
+                    </div>
+                    <p class="text-lg text-gray-600 text-center leading-relaxed">
+                        "Menjadi sekolah unggulan yang menghasilkan lulusan berkualitas tinggi, 
+                        berkarakter mulia, berdaya saing global, dan berkontribusi positif bagi masyarakat."
+                    </p>
+                </div>
+
+                <!-- Misi -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="text-center mb-8">
+                        <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bullseye text-green-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Misi</h3>
+                    </div>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Menyelenggarakan pendidikan berkualitas dengan kurikulum yang adaptif dan inovatif</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Mengembangkan karakter siswa melalui program pembinaan yang holistik</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Membangun lingkungan belajar yang kondusif dan modern</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Memberdayakan guru profesional dan berpengalaman</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Nilai-Nilai Kami
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Nilai-nilai fundamental yang menjadi dasar dalam setiap aktivitas pendidikan di SMA Nusantara
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition">
+                        <i class="fas fa-star text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Excellence</h3>
+                    <p class="text-gray-600">Selalu berusaha memberikan yang terbaik dalam setiap aspek pendidikan</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition">
+                        <i class="fas fa-heart text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Integritas</h3>
+                    <p class="text-gray-600">Menjunjung tinggi kejujuran dan transparansi dalam setiap tindakan</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition">
+                        <i class="fas fa-lightbulb text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Inovasi</h3>
+                    <p class="text-gray-600">Terus berinovasi dalam metode pembelajaran dan pengembangan kurikulum</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition">
+                        <i class="fas fa-users text-orange-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Kolaborasi</h3>
+                    <p class="text-gray-600">Membangun kerjasama yang baik antara siswa, guru, dan orang tua</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Fasilitas Unggulan
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Fasilitas modern dan lengkap untuk mendukung proses pembelajaran yang optimal
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Ruang Kelas -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="https://via.placeholder.com/400x250" alt="Ruang Kelas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Ruang Kelas Modern</h3>
+                        <p class="text-gray-600 mb-4">
+                            25 ruang kelas ber-AC dengan proyektor digital dan akses internet untuk pembelajaran interaktif.
+                        </p>
+                        <div class="flex items-center text-primary-600">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="text-sm font-semibold">25 Ruangan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laboratorium -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="https://via.placeholder.com/400x250" alt="Laboratorium" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Laboratorium Lengkap</h3>
+                        <p class="text-gray-600 mb-4">
+                            Lab Fisika, Kimia, Biologi, dan Komputer dengan peralatan modern dan standar internasional.
+                        </p>
+                        <div class="flex items-center text-primary-600">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="text-sm font-semibold">4 Laboratorium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perpustakaan -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="https://via.placeholder.com/400x250" alt="Perpustakaan" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Perpustakaan Digital</h3>
+                        <p class="text-gray-600 mb-4">
+                            Koleksi 10,000+ buku fisik dan digital dengan sistem manajemen modern dan ruang baca nyaman.
+                        </p>
+                        <div class="flex items-center text-primary-600">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="text-sm font-semibold">10,000+ Buku</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aula -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="https://via.placeholder.com/400x250" alt="Aula" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Aula Serbaguna</h3>
+                        <p class="text-gray-600 mb-4">
+                            Aula berkapasitas 500 orang dengan sound system professional untuk berbagai acara sekolah.
+                        </p>
+                        <div class="flex items-center text-primary-600">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="text-sm font-semibold">500 Kapasitas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lapangan Olahraga -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="https://via.placeholder.com/400x250" alt="Lapangan" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Fasilitas Olahraga</h3>
+                        <p class="text-gray-600 mb-4">
+                            Lapangan basket, voli, futsal, dan track lari untuk mendukung pengembangan bakat olahraga siswa.
+                        </p>
+                        <div class="flex items-center text-primary-600">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="text-sm font-semibold">Multi-Sport</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kantin -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="https://via.placeholder.com/400x250" alt="Kantin" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Kantin Sehat</h3>
+                        <p class="text-gray-600 mb-4">
+                            Kantin dengan menu sehat dan bergizi, dikelola dengan standar kebersihan tinggi.
+                        </p>
+                        <div class="flex items-center text-primary-600">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="text-sm font-semibold">Menu Sehat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-20 bg-primary-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
+                    Pencapaian Kami
+                </h2>
+                <p class="text-xl text-blue-100 max-w-2xl mx-auto">
+                    Angka-angka yang membanggakan sebagai bukti dedikasi kami dalam dunia pendidikan
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-white mb-2 counter">500</div>
+                    <div class="text-blue-100 text-lg">Siswa Aktif</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-white mb-2 counter">50</div>
+                    <div class="text-blue-100 text-lg">Tenaga Pengajar</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-white mb-2 counter">95</div>
+                    <div class="text-blue-100 text-lg">% Tingkat Kelulusan</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-white mb-2 counter">20</div>
+                    <div class="text-blue-100 text-lg">Ekstrakurikuler</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                Bergabunglah dengan Keluarga Besar SMA Nusantara
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Wujudkan impian pendidikan terbaik untuk masa depan yang gemilang. 
+                Daftarkan diri Anda sekarang dan rasakan pengalaman belajar yang tak terlupakan.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-primary-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary-700 transition transform hover:scale-105">
+                    Daftar Sekarang
+                </button>
+                <button class="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary-600 hover:text-white transition">
+                    Hubungi Kami
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="https://via.placeholder.com/40x40" alt="Logo" class="h-10 w-10">
+                        <span class="ml-2 text-xl font-bold">SMA Nusantara</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Sekolah unggulan yang berkomitmen menghasilkan generasi cerdas, berkarakter, dan berdaya saing global.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Menu Utama</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Beranda</a></li>
+                        <li><a href="tentang.html" class="text-gray-400 hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#program" class="text-gray-400 hover:text-white transition">Program</a></li>
+                        <li><a href="#berita" class="text-gray-400 hover:text-white transition">Berita</a></li>
+                        <li><a href="#kontak" class="text-gray-400 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Program</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Program MIPA</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Program IPS</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Program Bahasa</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Ekstrakurikuler</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Kontak Info</h4>
+                    <div class="space-y-3">
+                        <div class="text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            Jl. Pendidikan No. 123, Kota Sejahtera
+                        </div>
+                        <div class="text-gray-400">
+                            <i class="fas fa-phone mr-2"></i>
+                            (024) 123-4567
+                        </div>
+                        <div class="text-gray-400">
+                            <i class="fas fa-envelope mr-2"></i>
+                            info@smanusantara.sch.id
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 SMA Nusantara. Semua hak cipta dilindungi.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
