@@ -1,0 +1,53 @@
+{
+  "name": "template-website-sekolah",
+  "version": "1.0.0",
+  "description": "Template website sekolah modern yang responsif menggunakan HTML5, CSS3, dan Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "build": "npm run build:css && npm run minify:js",
+    "build:css": "tailwindcss -i ./styles.css -o ./dist/styles.min.css --minify",
+    "minify:js": "terser script.js -o ./dist/script.min.js",
+    "serve": "http-server -p 8080",
+    "watch": "concurrently \"npm run watch:css\" \"npm run dev\"",
+    "watch:css": "tailwindcss -i ./styles.css -o ./styles.css --watch"
+  },
+  "keywords": [
+    "website",
+    "sekolah",
+    "school",
+    "template",
+    "tailwindcss",
+    "responsive",
+    "modern",
+    "html5",
+    "css3",
+    "javascript",
+    "sma",
+    "smk",
+    "mts",
+    "pesantren"
+  ],
+  "author": "Developer Indonesia",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^3.3.0",
+    "terser": "^5.19.2",
+    "concurrently": "^8.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/template-website-sekolah.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/template-website-sekolah/issues"
+  },
+  "homepage": "https://github.com/username/template-website-sekolah#readme",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
